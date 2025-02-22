@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: red;
+        }
+
+        .container {
+            background-color: white;
+            width: 30%;
+            margin: auto;
+            padding: 1% 2%;
+            border-radius: 20px;
+        }
+
+        .form-field input,
+        .form-field select {
+            width: 90%;
+            padding: 10px;
+        }
+        @media( max-width:436px){
+            .container{
+                width: 90%;
+            }
+        }
+        button{
+            background-color: green;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 40%;
+            border-radius: 10px;
+            font-size: 1.3rem;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form class="container" action="login.html">
+        <h1 class="title">Register</h1>
+        <h1 class="quote">Start your journey</h1>
+        <P class="form-field">
+            <input type="text" placeholder="enter your name" required />
+        </P>
+        <p class="form-field">
+            <input type="email" placeholder="enter your mail id" required />
+        </p>
+        <p class="form-field">
+            <input type="password" placeholder="enter your password" required />
+        </p>
+        <p class="form-radio">
+            <input type="radio" name="gender" />male
+            <input type="radio" name="gender" />female
+        </p>
+        <p class="form-field">
+            <select>
+                <option value=""> select your state</option>
+                <option value="">AP</option>
+                <option value="">TS</option>
+                <option value="">MP</option>
+                <option value="">DL</option>
+                <option value="">UP</option>
+                <option value="">HR</option>
+            </select>
+        </p>
+        <p class="form-field">
+            <input type="date" required>
+        </p>
+        <P class="form-field">
+            <input type="file">
+        </P>
+        <button>submit</button>
+    </form>
+</body>
+
+</html>
